@@ -7,24 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab 9</title>
 
-  <!--
-    ============================================================
-    Step 5 - TrackJS 3rd party error tracking
-    ------------------------------------------------------------
-    Paste the snippet TrackJS gives you after signing up for the
-    trial. It MUST be the first script on the page so it can wrap
-    everything that follows and capture global errors.
-
-    Replace YOUR_TOKEN_HERE and YOUR_APP_NAME with the values from
-    your TrackJS install page, then uncomment the block.
-    ============================================================
-  -->
-  <!--
-  <script type="text/javascript">
-    window._trackJs = { token: 'YOUR_TOKEN_HERE', application: 'YOUR_APP_NAME' };
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({
+      token: "61c671986c214063ac6cf9595e3d58e7"
+    });
   </script>
-  <script type="text/javascript" src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-  -->
 
   <style>
     button {
